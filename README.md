@@ -1,7 +1,5 @@
 # Ticket Booking App
 
-Quiz isi Week 1 Flutter Mobile Development
-
 ## Home Screen
 ![image](https://user-images.githubusercontent.com/94110628/221456836-5782e365-5203-4ab3-b7e1-9db02d6da27c.png) ![image](https://user-images.githubusercontent.com/94110628/221456878-10f1a5b2-f063-42f3-8fd7-b1c53a0cd046.png) ![image](https://user-images.githubusercontent.com/94110628/221456926-2f8edd6e-d790-448a-b42d-babd9c1685fe.png)
 
