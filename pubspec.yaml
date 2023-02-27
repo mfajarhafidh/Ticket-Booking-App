@@ -12,12 +12,12 @@ dependencies:
   fluentui_icons : ^1.0.0
   get: 
   gap: ^2.0.0
+  barcode_widget: ^2.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
-  barcode_widget: ^2.0.2
 
 flutter:
   uses-material-design: true
