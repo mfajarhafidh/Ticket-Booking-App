@@ -27,7 +27,7 @@ class TicketView extends StatelessWidget {
             //showing the blue part of the card/ticket
             Container(
               decoration: BoxDecoration(
-                  color: isColor == null? Color(0xFF526799):Colors.white,
+                  color: isColor == null? const Color(0xFF526799):Colors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppLayout.getHeight(21)),
                       topRight: Radius.circular(AppLayout.getHeight(21)))),
@@ -40,26 +40,26 @@ class TicketView extends StatelessWidget {
                           style: isColor == null? Styles.headlineStyle3
                               .copyWith(color: Colors.white): Styles.headlineStyle3),
                       Expanded(child: Container()),
-                      ThickContainer(isColor: true),
+                      const ThickContainer(isColor: true),
                       Expanded(
                           child: Stack(
                         children: [
                           SizedBox(
                             height: AppLayout.getHeight(24),
-                            child: AppLayoutBuilderWidget(sections: 6)
+                            child: const AppLayoutBuilderWidget(sections: 6)
                           ),
                           Center(
                             child: Transform.rotate(
                               angle: 1.5,
                               child: Icon(
                                 Icons.local_airport_rounded,
-                                color:  isColor == null? Colors.white: Color(0xFF8ACCF7),
+                                color:  isColor == null? Colors.white: const Color(0xFF8ACCF7),
                               ),
                             ),
                           ),
                         ],
                       )),
-                      ThickContainer(isColor: true),
+                      const ThickContainer(isColor: true),
                       Expanded(child: Container()),
                       Text(ticket['to']['code'],
                           style: isColor == null?Styles.headlineStyle3

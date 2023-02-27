@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gap/gap.dart';
 import 'package:ticket_booking_app/widgets/icon_text_widget.dart';
 import 'package:ticket_booking_app/widgets/ticket_tabs.dart';
@@ -29,7 +27,7 @@ class SearchScreen extends StatelessWidget {
                 .copyWith(fontSize: AppLayout.getWidth(35)),
           ),
           Gap(AppLayout.getHeight(20)),
-          AppTicketTabs(firstTab: "Airline Tickets", secondTab: "Hotels",),
+          const AppTicketTabs(firstTab: "Airline Tickets", secondTab: "Hotels",),
           Gap(AppLayout.getHeight(25)),
           const AppIconText(
               icon: Icons.flight_takeoff_rounded, text: "Departure"),
@@ -41,7 +39,7 @@ class SearchScreen extends StatelessWidget {
                 vertical: AppLayout.getHeight(18),
                 horizontal: AppLayout.getWidth(15)),
             decoration: BoxDecoration(
-                color: Color(0xD91130CE),
+                color: const Color(0xD91130CE),
                 borderRadius: BorderRadius.circular(AppLayout.getWidth(10))),
             child: Center(
                 child: Text(
@@ -99,7 +97,7 @@ class SearchScreen extends StatelessWidget {
                         width: size.width * 0.44,
                         height: AppLayout.getHeight(200),
                         decoration: BoxDecoration(
-                            color: Color(0xFF3AB8B8),
+                            color: const Color(0xFF3AB8B8),
                             borderRadius:
                                 BorderRadius.circular(AppLayout.getHeight(18))),
                         padding: EdgeInsets.symmetric(vertical: AppLayout.getHeight(15), horizontal: AppLayout.getHeight(15)),
@@ -119,7 +117,7 @@ class SearchScreen extends StatelessWidget {
                           padding: EdgeInsets.all(AppLayout.getHeight(30)),
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
-                            border: Border.all(width: 18, color: Color(0xFF189999)),
+                            border: Border.all(width: 18, color: const Color(0xFF189999)),
                             color: Colors.transparent
                           ),
                         ),

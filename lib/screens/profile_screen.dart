@@ -1,7 +1,5 @@
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gap/gap.dart';
 import 'package:ticket_booking_app/widgets/column_layout.dart';
 import 'package:ticket_booking_app/widgets/layout_builder_widget.dart';
@@ -61,10 +59,10 @@ class ProfileScreen extends StatelessWidget {
                     child: Row(
                       children: [
                         Container(
-                          padding: EdgeInsets.all(3),
-                          decoration: BoxDecoration(
+                          padding: const EdgeInsets.all(3),
+                          decoration: const BoxDecoration(
                               shape: BoxShape.circle,
-                              color: const Color(0xFF526799)),
+                              color: Color(0xFF526799)),
                           child: const Icon(
                             FluentSystemIcons.ic_fluent_shield_filled,
                             color: Colors.white,
@@ -72,7 +70,7 @@ class ProfileScreen extends StatelessWidget {
                           ),
                         ),
                         Gap(AppLayout.getHeight(5)),
-                        Text(
+                        const Text(
                           "Premium status",
                           style: TextStyle(
                               color: Color(0xFF526799),
@@ -121,7 +119,7 @@ class ProfileScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.transparent,
                     shape: BoxShape.circle,
-                    border: Border.all(width: 18, color: Color(0xFF264CD2))
+                    border: Border.all(width: 18, color: const Color(0xFF264CD2))
                   ),
                 ),
               ),
@@ -132,10 +130,10 @@ class ProfileScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
-                      child: Icon(FluentSystemIcons.ic_fluent_lightbulb_filament_filled,
-                      color: Styles.primaryColor, size: 27,),
                       maxRadius: 25,
                       backgroundColor: Colors.white,
+                      child: Icon(FluentSystemIcons.ic_fluent_lightbulb_filament_filled,
+                      color: Styles.primaryColor, size: 27,),
                     ),
                     Gap(AppLayout.getHeight(12)),
                     Column(
@@ -143,7 +141,7 @@ class ProfileScreen extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "You\'ve got a new award",
+                          "You've got a new award",
                           style: Styles.headlineStyle2.copyWith(
                             fontWeight: FontWeight.bold, color: Colors.white
                           ),
@@ -200,25 +198,25 @@ class ProfileScreen extends StatelessWidget {
                 Gap(AppLayout.getHeight(4)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     AppColumnLayout(firstText: "23 042", secondText: "Miles", alignment: CrossAxisAlignment.start, isColor: false,),
                     AppColumnLayout(firstText: "Airline CO", secondText: "Received from", alignment: CrossAxisAlignment.start, isColor: false,)
                   ],
                 ),
                 Gap(AppLayout.getHeight(12)),
-                AppLayoutBuilderWidget(sections: 12, isColor: false,),
+                const AppLayoutBuilderWidget(sections: 12, isColor: false,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     AppColumnLayout(firstText: "24", secondText: "Miles", alignment: CrossAxisAlignment.start, isColor: false,),
-                    AppColumnLayout(firstText: "McDonal\'s", secondText: "Received from", alignment: CrossAxisAlignment.start, isColor: false,)
+                    AppColumnLayout(firstText: "McDonal's", secondText: "Received from", alignment: CrossAxisAlignment.start, isColor: false,)
                   ],
                 ),
                 Gap(AppLayout.getHeight(12)),
-                AppLayoutBuilderWidget(sections: 12, isColor: false,),
+                const AppLayoutBuilderWidget(sections: 12, isColor: false,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
+                  children: const [
                     AppColumnLayout(firstText: "52 340", secondText: "Miles", alignment: CrossAxisAlignment.start, isColor: false,),
                     AppColumnLayout(firstText: "Exuma", secondText: "Received from", alignment: CrossAxisAlignment.start, isColor: false,)
                   ],
@@ -228,7 +226,7 @@ class ProfileScreen extends StatelessWidget {
           ),
           Gap(AppLayout.getHeight(25)),
           InkWell(
-            onTap: ()=>print("You are tapped"),
+            onTap: (){},
             child: Center(child: Text("How to get more miles", style: Styles.textStyle.copyWith(color: Styles.primaryColor, fontWeight: FontWeight.w500),)))
         ],
       ),
