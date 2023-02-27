@@ -87,11 +87,14 @@ class ProfileScreen extends StatelessWidget {
               const Spacer(),
               Column(
                 children: [
-                  Text(
-                    "Edit",
-                    style: Styles.textStyle.copyWith(
-                        color: Styles.primaryColor,
-                        fontWeight: FontWeight.w300),
+                  InkWell(
+                    onTap: (){},
+                    child: Text(
+                      "Edit",
+                      style: Styles.textStyle.copyWith(
+                          color: Styles.primaryColor,
+                          fontWeight: FontWeight.w300),
+                    ),
                   ),
                 ],
               )
